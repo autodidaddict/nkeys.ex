@@ -26,7 +26,7 @@ defmodule NKEYS.Xkeys do
           {:ok, binary()} | :error
   @doc """
   Performs authenticated decryption by extracting data from the ed25519 "box". Note that the
-  keys passed to this function need to come from the `Nkeys.Keypair` struct fields and must
+  keys passed to this function need to come from the `NKEYS.Keypair` struct fields and must
   not be human-friendly encoded strings.
   """
   def open(input, our_secret, their_public) do
